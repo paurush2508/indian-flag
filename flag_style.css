@@ -1,0 +1,78 @@
+#flag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 900px;
+  height: 600px;
+  border: 1px solid black;
+}
+
+#saffron {
+  width: 900px;
+  height: 200px;
+  background: #ff9933;
+  border: 1px solid black;
+}
+
+#white {
+  width: 900px;
+  height: 200px;
+  background: #ffffff;
+  border: 1px solid black;
+}
+
+#green {
+  width: 900px;
+  height: 200px;
+  background: #138808;
+  border: 1px solid black;
+}
+
+#wheel {
+  position: absolute;
+  top: 202px;
+  left: 350px;
+  width: 180px;
+  height: 180px;
+  border: 8px solid #000080;
+  border-radius: 50%;
+  animation: rotating 5s linear infinite;
+}
+
+#wheel > div {
+  position: absolute;
+  top: 89px;
+  width: 180px;
+  height: 2px;
+  background: #000080;
+}
+
+#spoke1{transform: rotate(0deg);}
+#spoke2{transform: rotate(15deg);}
+#spoke3{transform: rotate(30deg);}
+#spoke4{transform: rotate(45deg);}
+#spoke5{transform: rotate(60deg);}
+#spoke6{transform: rotate(75deg);}
+#spoke7{transform: rotate(90deg);}
+#spoke8{transform: rotate(105deg);}
+#spoke9{transform: rotate(120deg);}
+#spoke10{transform: rotate(135deg);}
+#spoke11{transform: rotate(150deg);}
+#spoke12{transform: rotate(165deg);}
+
+@keyframes rotating {
+	  from {
+	    -ms-transform: rotate(0deg);
+	    -moz-transform: rotate(0deg);
+	    -webkit-transform: rotate(0deg);
+	    -o-transform: rotate(0deg);
+	    transform: rotate(0deg);
+	  }
+	  to {
+	    -ms-transform: rotate(360deg);
+	    -moz-transform: rotate(360deg);
+	    -webkit-transform: rotate(360deg);
+	    -o-transform: rotate(360deg);
+	    transform: rotate(360deg);
+	  }
+	}
